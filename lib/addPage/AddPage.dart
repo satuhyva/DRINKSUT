@@ -1,8 +1,11 @@
 // ignore_for_file: file_names
 import 'package:flutter/material.dart';
 
-import './AddDrinkTitle.dart';
+import './AddDrinksTitle.dart';
 import './AlcoholicSlider.dart';
+import './AddAlcoholicDrinks.dart';
+import 'AddNonAlcoholicDrinks.dart';
+
 
 
 class AddPage extends StatefulWidget {
@@ -30,8 +33,11 @@ class AddPageState extends State {
       color: Theme.of(context).primaryColorLight,
       child: Column(
         children: [
-          const AddDrinkTitle(), 
-          AlcoholicSlider(isAlcoholic: isAlcoholic, changeIsAlcoholic: changeIsAlcoholic)
+          const AddDrinksTitle(), 
+          AlcoholicSlider(isAlcoholic: isAlcoholic, changeIsAlcoholic: changeIsAlcoholic),
+          isAlcoholic 
+          ? const AddAlcoholicDrinks() 
+          : const AddNonAlcoholicDrinks(),
         ],));
   }
 }

@@ -2,7 +2,7 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_test/flutter_test.dart';
 
-import '../lib/addPage/AlcoholicSlider.dart';
+import '../../lib/addPage/AlcoholicSlider.dart';
 
 
 void main() {
@@ -34,9 +34,6 @@ void main() {
     expect(selectedState, true);
 
   });
-
-
-
 
 }
 

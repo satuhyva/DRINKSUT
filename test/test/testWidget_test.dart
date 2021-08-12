@@ -1,7 +1,7 @@
 // ignore_for_file: file_names, avoid_relative_lib_imports
 import 'package:flutter_test/flutter_test.dart';
 
-import '../lib/testWidget/TestWidget.dart';
+import '../../lib/testWidget/TestWidget.dart';
 
 
 void main() {

@@ -2,11 +2,12 @@
 import 'package:flutter/material.dart';
 
 
-class AddDrinkTitle extends StatelessWidget {
-  const AddDrinkTitle({Key? key}) : super(key: key);
+class AddDrinksTitle extends StatelessWidget {
+  const AddDrinksTitle({Key? key}) : super(key: key);
 
   @override
   Widget build(BuildContext context) {
+
 
     return Container(
       padding: const EdgeInsets.only(top: 40, bottom: 10),

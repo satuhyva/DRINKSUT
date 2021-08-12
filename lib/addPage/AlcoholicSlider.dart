@@ -14,7 +14,7 @@ class AlcoholicSlider extends StatelessWidget {
   Widget build(BuildContext context) {
 
     final textNonAlcoholic = Text(
-      'Alkoholiton',
+      'alkoholiton',
       style: TextStyle(
         fontSize: 17,
         color: isAlcoholic ? Theme.of(context).primaryColor : Theme.of(context).primaryColorDark,
@@ -23,7 +23,7 @@ class AlcoholicSlider extends StatelessWidget {
       );
 
     final textAlcoholic = Text(
-      'Sisältää alkoholia',
+      'sisältää alkoholia',
       style: TextStyle(
         fontSize: 17,
         color: isAlcoholic ? Theme.of(context).primaryColorDark : Theme.of(context).primaryColor,
