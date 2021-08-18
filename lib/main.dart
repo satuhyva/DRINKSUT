@@ -1,14 +1,15 @@
 import 'package:flutter/material.dart';
 
-import 'app/App.dart';
-import './themeData/themeData.dart';
+import './appScaffold/appScaffold.dart';
 
 
 main() {
 
   final app = MaterialApp(
-    theme: themeData,
-    home: const App()
+    theme: ThemeData(
+      primarySwatch: Colors.blueGrey
+    ),
+    home: const AppScaffold() 
   );
 
   runApp(app);

@@ -7,7 +7,6 @@ class IconButtonWithBackground extends StatelessWidget {
   final Function performAction;
   final Icon icon;
 
-
   const IconButtonWithBackground({ 
     Key? key, 
     required this.performAction, 
@@ -18,21 +17,22 @@ class IconButtonWithBackground extends StatelessWidget {
   @override 
   Widget build(BuildContext context) {
     return Material(
-          color: Theme.of(context).primaryColorLight,
-          child: Center(
-            child: Ink(
-              decoration: ShapeDecoration(
-                color: Theme.of(context).primaryColor,
-                shape: const CircleBorder(),
-              ),
-              child: IconButton(
-                icon: icon,
-                iconSize: 30,
-                color: Colors.white,
-                onPressed: () => performAction(),
+            // color: Theme.of(context).primaryColorLight,
+            
+            child: Center(
+              child: Ink(
+                decoration: ShapeDecoration(
+                  color: Theme.of(context).primaryColor,
+                  shape: const CircleBorder(),
+                ),
+                child: IconButton(
+                  icon: icon,
+                  iconSize: 24,
+                  color: Colors.white,
+                  onPressed: () => performAction(),
+                ),
               ),
             ),
-          ),
-        );
+          );
   }
 }

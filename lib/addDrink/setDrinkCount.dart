@@ -25,7 +25,7 @@ class SetDrinkCount extends StatelessWidget {
         padding: const EdgeInsets.only(top: 10, bottom: 10),
         child: Text(
           'LUKUMÄÄRÄ', 
-          style: TextStyle(fontSize: 18, color: Theme.of(context).primaryColorDark, fontWeight: FontWeight.bold)
+          style: TextStyle(fontSize: 16, color: Theme.of(context).primaryColor, fontWeight: FontWeight.bold)
           ),
       ),
       Row(
@@ -44,8 +44,8 @@ class SetDrinkCount extends StatelessWidget {
                   key: const Key('drinkCount'),
                   style: 
                     TextStyle(
-                      fontSize: 26, 
-                      color: Theme.of(context).primaryColorDark, 
+                      fontSize: 22, 
+                      color: Theme.of(context).primaryColor, 
                       fontWeight: FontWeight.bold,
                   )),
                 ),
